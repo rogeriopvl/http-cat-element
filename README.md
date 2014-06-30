@@ -1,5 +1,7 @@
 # &lt;http-cat&gt;
 
+![Status 204](http://httpcats.herokuapp.com/204)
+
 This is a web component for embedding images from [HTTP Cats](http://httpcats.herokuapps.com).
 
 Here's a [live demo](http://rogeriopvl.github.io/http-cat-element).
