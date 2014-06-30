@@ -1,0 +1,14 @@
+{
+  "name": "http-cat-element",
+  "version": "0.0.1",
+  "keywords": "http, cats, httpcats, seed, polymer, web-components",
+  "main": "dist/http-cat.html",
+  "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.1"
+  }
+}

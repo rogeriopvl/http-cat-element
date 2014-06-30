@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>http-cat Demo</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ink/3.0.2/css/ink.min.css">
+  <style>
+    body {
+      font-weight: 300;
+    }
+
+    .code code {
+      background-color: #eee;
+      padding: 1em;
+    }
+  </style>
+
+  <script src="bower_components/platform/platform.js"></script>
+  <link rel="import" href="src/http-cat.html">
+
+</head>
+<body unresolved>
+  <div class="ink-grid">
+
+    <header class="vertical-space">
+      <h1><code>&lt;http-cat&gt;</code> web component</h1>
+    </header>
+
+    <div class="content">
+
+      <p>This is how you embed a HTTP Cat using <a href="http://webcomponents.org/">web components</a> (with <a href="http://polymer-project.org">Polymer</a>):</p>
+
+      <div class="code">
+        <pre><code>&lt;http-cat status="404"&gt;&lt;/http-cat&gt;</code></pre>
+      </div>
+
+      <p class="vertical-space">A <code>http-cat</code> web component looks like this:</p>
+
+      <http-cat status="404" container="#img-container"></http-cat>
+      <div id="img-container"></div>
+
+      <div class="vertical-space">
+        <h3>API</h3>
+
+        <h4>Available attributes</h4>
+
+        <ul>
+          <li><code>status</code> - The HTTP status code to show the related cat image</li>
+          <li><code>container</code> - Selector with the element where the img element will be inserted. If not provided, the image will be appended after the <code>http-cat</code> element</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <footer class="vertical-space">
+      <p>Check out the source code at <a href="http://github.com/rogeriopvl/http-cat-element">http://github.com/rogeriopvl/http-cat-element</a></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

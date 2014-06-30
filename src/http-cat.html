@@ -1,0 +1,63 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!--
+Element that embeds HTTP Cats images
+
+##### Example
+
+    <http-cat container="#img-container" status="404"></http-cat>
+
+@element http-cat
+@blurb Element that embeds HTTP Cats images
+@status alpha
+@homepage http://rogeriopvl.github.io/http-cat-element
+-->
+<polymer-element name="http-cat" attributes="status container">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <content></content>
+
+  </template>
+
+  <script>
+
+    Polymer('http-cat', {
+        status: 200,
+        container: null,
+
+        ready: function () {
+            this.buildImg();
+        },
+
+        buildImg: function () {
+          var img = document.createElement('img');
+          img.src = '//httpcats.herokuapp.com/' + this.status + '.jpg';
+
+          this.insertImg(img);
+        },
+
+        insertImg: function (content) {
+          if (this.container) {
+            var el;
+            el = document.querySelector(this.container);
+            el.appendChild(content);
+          } else {
+            if (this.parentNode.lastChild == this) {
+              this.parentNode.appendChild(content);
+            } else {
+              this.parentNode.insertBefore(content, this.nextSibling);
+            }
+          }
+        }
+    });
+
+  </script>
+
+</polymer-element>
