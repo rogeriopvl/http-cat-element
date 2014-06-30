@@ -1,6 +1,6 @@
 # &lt;http-cat&gt;
 
-![Status 204](http://httpcats.herokuapp.com/204)
+<img src="http://httpcats.herokuapp.com/204" alt="http status cat 204" width="250">
 
 This is a web component for embedding images from [HTTP Cats](http://httpcats.herokuapps.com).
 
