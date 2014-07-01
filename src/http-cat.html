@@ -12,7 +12,7 @@ Element that embeds HTTP Cats images
 @status alpha
 @homepage http://rogeriopvl.github.io/http-cat-element
 -->
-<polymer-element name="http-cat" attributes="status container">
+<polymer-element name="http-cat" attributes="status container alt">
 
   <template>
 
@@ -31,6 +31,7 @@ Element that embeds HTTP Cats images
     Polymer('http-cat', {
         status: 200,
         container: null,
+        alt: 'HTTP Cat status ',
 
         ready: function () {
             this.buildImg();
@@ -39,6 +40,7 @@ Element that embeds HTTP Cats images
         buildImg: function () {
           var img = document.createElement('img');
           img.src = '//httpcats.herokuapp.com/' + this.status + '.jpg';
+          img.alt = this.alt + this.status;
 
           this.insertImg(img);
         },
