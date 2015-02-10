@@ -1,14 +1,24 @@
 {
   "name": "http-cat-element",
   "version": "0.0.1",
-  "keywords": ["http", "cats", "httpcats", "seed", "polymer", "web-components"],
-  "main": "dist/http-cat.html",
+  "keywords": [
+    "http",
+    "cats",
+    "status",
+    "httpcats",
+    "web",
+    "components",
+    "custom",
+    "elements",
+    "web-components"
+  ],
+  "main": "http-cat.html",
   "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.3.1"
+    "webcomponentsjs": "~0.5.4"
   }
 }

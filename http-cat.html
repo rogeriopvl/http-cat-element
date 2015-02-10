@@ -1,0 +1,29 @@
+<!--
+Element that embeds HTTP Cats images
+
+##### Example
+
+    <img is="http-cat" status="404">
+
+@element http-cat
+@blurb Element that embeds HTTP Cats images
+@status stable
+@homepage http://rogeriopvl.github.io/http-cat-element
+-->
+<script>
+  (function () {
+    var HTTPCatProto = Object.create(HTMLElement.prototype);
+
+    HTTPCatProto.createdCallback = function () {
+      var status = this.getAttribute('status');
+      if (status) {
+        this.setAttribute('src', '//httpcats.herokuapp.com/' + status + '.jpg');
+      }
+    };
+
+    document.registerElement('http-cat', {
+      prototype: HTTPCatProto,
+      extends: 'img'
+    });
+  })();
+</script>
