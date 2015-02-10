@@ -1,4 +1,4 @@
-# &lt;http-cat&gt;
+# http-cat
 
 <img src="http://httpcats.herokuapp.com/204" alt="http status cat 204" width="250">
 
@@ -8,15 +8,33 @@ Here's a [live demo](http://rogeriopvl.github.io/http-cat-element).
 
 ## Install
 
+### Bower
+
     bower install http-cat-element
+
+Then just import the component in your HTML:
+
+    <link rel="import" href="bower_components/http-cat-element/http-cat.html">
+
+### Manual
+
+Get the `http-cat.html` file and then import it your markup:
+
+    <link rel="import" href="http-cat.html">
+
+#### Important
+Don't forget to also include the [webcomponentsjs](https://github.com/webcomponents/webcomponentsjs) polyfill. If you installed via bower, you can find it already inside the `bower_components/` folder, because it's a dependency.
 
 ## Usage
 
-To use this component just add the following markup to your HTML:
+This web component extends the `<img>` tag.
 
-    <http-cat container="#img-container" status="404"></http-cat>
+To use it just add the following markup to your HTML:
 
-    <div id="img-container"></div>
+    <img is="http-cat" status="404">
+
+### Attributes
+* `status`: change it so that the image matches the corresponding HTTP status code
 
 ## LICENSE
 
