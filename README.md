@@ -1,8 +1,8 @@
 # http-cat
 
-<img src="http://httpcats.herokuapp.com/204" alt="http status cat 204" width="250">
+<img src="https://http.cat/204" alt="http status cat 204" width="250">
 
-This is a web component for embedding images from [HTTP Cats](http://httpcats.herokuapps.com).
+This is a web component for embedding images from [HTTP Cats](https://http.cat).
 
 Here's a [live demo](http://rogeriopvl.github.io/http-cat-element).
 
