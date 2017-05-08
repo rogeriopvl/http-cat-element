@@ -20,5 +20,6 @@
   ],
   "dependencies": {
     "webcomponentsjs": "~0.5.4"
-  }
+  },
+  "license": "MIT"
 }
