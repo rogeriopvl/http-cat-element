@@ -1,51 +1,61 @@
 <!doctype html>
 <html>
   <head>
-      <meta charset=utf-8>
-      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-      <title>http-cat Demo</title>
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ink/3.0.2/css/ink.min.css">
-      <style>
-        body {
-          font-weight: 300;
-        }
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>http-cat Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/ink/3.0.2/css/ink.min.css"
+    />
+    <style>
+      body {
+        font-weight: 300;
+      }
 
-        .code {
-          background-color: #eee;
-          padding-top: 1em;
-          padding-bottom: 1em;
-          padding-left: 2em;
-          padding-right: 2em;
-        }
+      .code {
+        background-color: #eee;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
 
-        img {
-          width: 500px;
-        }
-      </style>
-      <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-      <link rel="import" href="http-cat.html">
+      img {
+        width: 500px;
+      }
+    </style>
+    <script type="module" src="http-cat.js"></script>
   </head>
   <body>
     <div class="ink-grid">
-
       <header class="vertical-space">
         <h1><code>http-cat</code> web component</h1>
       </header>
 
       <div class="content">
-
-        <p>This is how you embed an HTTP Cat using <a href="http://webcomponents.org/">web components</a>.</p>
+        <p>
+          This is how you embed an HTTP Cat using
+          <a href="http://webcomponents.org/">web components</a>.
+        </p>
 
         <div class="top-space bottom-space">
           <span class="code">
-            <code>&lt;img is="http-cat" status="404"&gt;</code>
+            <code>&lt;http-cat status="404"&gt;&lt;/http-cat&gt;</code>
           </span>
         </div>
 
         <p class="vertical-space">And it looks like this:</p>
 
-        <img is="http-cat" status="404">
+        <http-cat status="404" alt="404 Cat Not Found"></http-cat>
 
         <div class="vertical-space">
           <h3>API</h3>
@@ -53,15 +63,26 @@
           <h4>Available attributes</h4>
 
           <ul>
-            <li><code>status</code> - The HTTP status code to show the related cat image</li>
+            <li>
+              <code>status</code> - The HTTP status code to show the related cat
+              image
+            </li>
           </ul>
-          <p>It supports all standard <code>img</code> element attributes (don't forget <code>alt</code>!).</p>
+          <p>
+            This component is just an img tag so it supports all standard
+            <code>img</code> element attributes (don't forget
+            <code>alt</code>!).
+          </p>
         </div>
-
       </div>
 
       <footer class="vertical-space">
-        <p>Check out the source code at <a href="http://github.com/rogeriopvl/http-cat-element">http://github.com/rogeriopvl/http-cat-element</a></p>
+        <p>
+          Check out the source code at
+          <a href="http://github.com/rogeriopvl/http-cat-element"
+            >http://github.com/rogeriopvl/http-cat-element</a
+          >
+        </p>
       </footer>
     </div>
   </body>
