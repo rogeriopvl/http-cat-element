@@ -4,12 +4,12 @@
 
 This is a web component for embedding images from [HTTP Cats](https://http.cat).
 
-Here's a [live demo](http://rogeriopvl.github.io/http-cat-element).
+Here's a [live demo](http://httpcats.github.io/http-cat-element).
 
 ## Install
 
 ```shell
-npm install http-cat-element
+npm install @http.cat/http-cat-element
 ```
 
 ## Import
@@ -17,7 +17,7 @@ npm install http-cat-element
 If installed via NPM:
 
 ```js
-import "http-cat-element";
+import "@http.cat/http-cat-element";
 ```
 
 Or just import the component file in your HTML:
